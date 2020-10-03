@@ -35,7 +35,18 @@ body {
   font-style: normal;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* ======HEADER====== */
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 .nav {
   display: flex;
@@ -83,13 +94,6 @@ body {
 }
 .container-header {
   display: flex;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* justify-content: center;
-  align-items: center; */
-  width: 1200px;
-  /* height: 80px; */
 }
 .nav {
   display: flex;
@@ -98,8 +102,6 @@ body {
 
 .nav-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .nav-list :not(:last-child) {
   margin-right: 50px;
@@ -125,17 +127,14 @@ body {
   padding-top: 200px;
 }
 .container-hero {
-  width: 1200px;
   height: 600px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .hero-title {
-  width: 696px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -148,7 +147,7 @@ body {
 }
 
 .hero-title-btn {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -188,10 +187,6 @@ body {
 .container-advantages {
   display: flex;
   justify-content: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }
 .advantages-list {
   display: flex;
@@ -207,6 +202,9 @@ body {
 /* ======END WORK====== */
 
 /* ======ACTIVITY====== */
+.activity {
+  padding-bottom: 94px;
+}
 .activity-name {
   font-weight: 700;
   font-size: 36px;
@@ -214,14 +212,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 50px;
 }
 
 .container-activity {
   display: flex;
-  padding: 0px 15px 94px 15px;
-  width: 1200px;
   flex-wrap: wrap;
-  margin: 0 auto;
   justify-content: center;
 }
 .activity-list {
@@ -230,10 +226,6 @@ body {
 .activity-list :not(:last-child) {
   margin-right: 30px;
 }
-.activity-name {
-  min-width: 376px;
-  margin-bottom: 50px;
-}
 
 /* ====== END ACTIVITY====== */
 
@@ -241,6 +233,8 @@ body {
 
 .team {
   background: var(--secondary-bg-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-our {
@@ -250,6 +244,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -259,7 +254,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding: 30px 0px 10px 0px;
+  margin-bottom: 10px;
 }
 .team-list-text {
   font-weight: 400;
@@ -269,31 +264,25 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin: 0 auto;
-  padding: 0px 0px 30px 0px;
 }
 
 .container-team {
-  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
-  padding: 0px 15px 0px 15px;
 }
-.team-our {
-  padding: 94px 0px 50px 0px;
-  margin: 0 auto;
+
+.team-description {
+  padding: 30px 59px 30px 59px;
+  background: #ffffff;
 }
+
 .team-list {
   display: flex;
-  width: 1170px;
-  padding-bottom: 94px;
 }
 
 .team-list-item {
   width: 270px;
-  height: 368px;
-  justify-content: center;
 }
 .team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -305,10 +294,11 @@ body {
 
 .footer {
   background: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo-link {
   margin-bottom: 20px;
-  padding-top: 60px;
 }
 .footer-logo-white {
   color: #ffffff;
@@ -350,14 +340,9 @@ body {
 }
 
 .container-footer {
-  width: 1200px;
   min-height: 252px;
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .address-footer {
@@ -367,13 +352,15 @@ body {
 .address-footer :not(:last-child) {
   margin-bottom: 9px;
 }
-.address-footer:last-child {
-  padding-bottom: 60px;
-}
+
 /* ======END FOOTER====== */
 
 /* ======PORTFOLIO====== */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-list-btn {
   font-weight: 500;
   font-size: 16px;
@@ -407,18 +394,12 @@ body {
 }
 
 .portfolio .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
 }
 
 .portfolio-btn {
   display: flex;
-  padding-top: 94px;
 }
 .portfolio-list-btn {
   padding: 6px 22px 6px 22px;
@@ -430,11 +411,6 @@ body {
 }
 
 .container-card {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
-  margin: 0 auto;
   display: block;
 }
 
